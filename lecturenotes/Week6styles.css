@@ -1,0 +1,20 @@
+h1 {
+    color:seagreen;
+    font-size: 400%; 
+    letter-spacing:.5em; /* This is how to space out letters*/
+} 
+p {
+    color:royalblue;
+    font-weight:bolder; /* This made the font more bold*/
+}
+body {
+    color:maroon;
+    font-family:Arial, Helvetica, sans-serif
+} 
+h1, h2 {
+    font-size: 400%; 
+    /* this is a group selector, styling both headings and saving time*/ 
+    color:mediumaquamarine;
+}
+p a {color:orange;
+} /* only styling links inside the p tage */
