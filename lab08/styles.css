@@ -1,0 +1,39 @@
+body {
+    background-color: #f3e5dc;
+    color: #73736f;
+}
+h1, h2{
+    color:#613a21;
+}
+a:link {
+    color:#425d4c;
+}
+
+nav {
+    background-color:#ffeff3;
+    padding: 10px;
+    margin-bottom: 30px;
+}
+nav a {color: #c37e51;}
+nav a:hover {background-color:#9a4300;}
+.saying {float:right;}
+
+.contactinfo {background: color #727272; padding: 17px; border-radius: 14;}
+.address {float:left; margin-right:50px}
+
+.clear {clear:both;}
+.mapandform {background-color:#b4a9d1}; padding: 18px; border-radius: 12px;}
+.map {float:right;}
+.map, .form {margin:47px;}
+.map {flex:2; order:2;}
+.form {flex:2; order:1;}
+.mapandform, .contactinfo {margin:35;}
+
+
+
+
+
+
+
+
+
