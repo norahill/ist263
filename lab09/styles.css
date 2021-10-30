@@ -1,0 +1,44 @@
+body {
+    background-color: #f3e5dc;
+    color: #000000;
+}
+h1, h2{
+    color:#613a21;
+}
+h1 {text-align: center;} 
+
+a:link {color:#425d4c;}
+a:visited {color: #425d4c;}
+nav {
+    background-color:#ffeff3;
+    padding: 8px;
+   border-radius: 10px;
+}
+nav a {color: #c37e51;
+padding: 8px;
+margin-bottom: 20px;
+}
+nav a:hover {background-color:#9a4300;}
+
+.maincontainer {display: flex; justify-content: right;}
+
+.otherskills 
+{display:flex;
+    background-color:mediumaquamarine;
+     padding: 7px; 
+     border-radius: 27px;
+    flex-basis:25%}
+
+.flex {display:flex; flex-basis:75%; justify-content:space-between}
+.otherskills, .maincontainer, .flex {padding:48px}
+p {padding:20px}
+
+
+
+
+
+
+
+
+
+

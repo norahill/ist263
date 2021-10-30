@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img {width: 100px;}
+        p {text-align: center;} 
+        .maringcentering {
+            border: 1px solid orange;
+            margin: 0 auto; /*centers block level containers */
+            width: 30%; 
+        <-->
+        .flexboxcentering {
+            border: 1px ;
+            display: flex; 
+            justify-content: center;
+        }
+        .flexcenternav {
+            display: flex;
+        }
+    </style>
+</head>
+<body>
+    <!--this below is part we will center -->
+    <p>This is a paragraph of text we will center</p>
+    <div class="maringcentering"><img src="pumpkin.jpeg">Happy Halloween</div>
+
+    <!--now centering w flex box below -->
+
+    <div class="flexboxcentering"><img src="pumpkin.jpeg">Happy Halloween</div>
+    <!--See the 4 div tags, these are rows and the start is column -->
+    <div class="flexcenterednav"></div>
+        <div>Home</div>
+        <div>About Us</div>
+        <div>Products</div>
+        <div>Contact</div>
+    </div>
+</body>
+</html>
