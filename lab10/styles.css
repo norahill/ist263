@@ -19,6 +19,9 @@ nav a {
     padding: 8px;
     margin-bottom: 20px;
 }
+a {
+    color: green;
+  }
 nav a:hover {background-color:#9a4300;}
 
 .skills {text-align: center;}
