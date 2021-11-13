@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accessibility</title>
+    <style>
+        /* how do you do skip to content:
+        1. you need html link that says "SKIP TO CONTENT"
+        2. need anchor for that link
+        3. style in CSS with position absoluyre and left to make it dissapear
+        3B. Bring it back by changing left value -focus class*/
+        #skip {
+            position: absolute; /* how to add text over an image*/
+            left: -999px; 
+            background-color:orange;
+
+        }
+        #skip:focus {
+            left: 10px;
+        }
+    </style>
+</head>
+<body>
+    <!--Skip to content is an anchor link, pound sign speciifc where we are going on page -->
+    <a id="skip" href="#maincontent"> Skip to Content</a> 
+        <a href="index.html" tabindex="3">Home</a>
+        <a href="about.html" tabindex="2">About</a>
+        <a href="contact.html" tabindex="1">Contact</a>
+
+
+    <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin auctor mi sed condimentum condimentum. Vestibulum volutpat eros at ex semper, id condimentum mauris malesuada. Donec eleifend risus eu euismod mollis. Fusce dapibus laoreet fermentum. Nulla lacinia arcu at erat varius, a iaculis nulla porta. Nunc pulvinar dignissim nunc id elementum. Sed dignissim velit odio, at tincidunt felis malesuada ornare. Praesent feugiat tempor diam nec semper. Nulla sed congue lacus. Vestibulum viverra tellus eros, eu aliquam lectus lobortis in. Proin odio enim, tincidunt sed neque at, eleifend placerat velit. Nam a odio ipsum. Aenean quis consequat augue. Aliquam ac ullamcorper justo. Morbi porta est vel vehicula cursus.</p>
+    <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin auctor mi sed condimentum condimentum. Vestibulum volutpat eros at ex semper, id condimentum mauris malesuada. Donec eleifend risus eu euismod mollis. Fusce dapibus laoreet fermentum. Nulla lacinia arcu at erat varius, a iaculis nulla porta. Nunc pulvinar dignissim nunc id elementum. Sed dignissim velit odio, at tincidunt felis malesuada ornare. Praesent feugiat tempor diam nec semper. Nulla sed congue lacus. Vestibulum viverra tellus eros, eu aliquam lectus lobortis in. Proin odio enim, tincidunt sed neque at, eleifend placerat velit. Nam a odio ipsum. Aenean quis consequat augue. Aliquam ac ullamcorper justo. Morbi porta est vel vehicula cursus.</p>
+    <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin auctor mi sed condimentum condimentum. Vestibulum volutpat eros at ex semper, id condimentum mauris malesuada. Donec eleifend risus eu euismod mollis. Fusce dapibus laoreet fermentum. Nulla lacinia arcu at erat varius, a iaculis nulla porta. Nunc pulvinar dignissim nunc id elementum. Sed dignissim velit odio, at tincidunt felis malesuada ornare. Praesent feugiat tempor diam nec semper. Nulla sed congue lacus. Vestibulum viverra tellus eros, eu aliquam lectus lobortis in. Proin odio enim, tincidunt sed neque at, eleifend placerat velit. Nam a odio ipsum. Aenean quis consequat augue. Aliquam ac ullamcorper justo. Morbi porta est vel vehicula cursus.</p>  
+    <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin auctor mi sed condimentum condimentum. Vestibulum volutpat eros at ex semper, id condimentum mauris malesuada. Donec eleifend risus eu euismod mollis. Fusce dapibus laoreet fermentum. Nulla lacinia arcu at erat varius, a iaculis nulla porta. Nunc pulvinar dignissim nunc id elementum. Sed dignissim velit odio, at tincidunt felis malesuada ornare. Praesent feugiat tempor diam nec semper. Nulla sed congue lacus. Vestibulum viverra tellus eros, eu aliquam lectus lobortis in. Proin odio enim, tincidunt sed neque at, eleifend placerat velit. Nam a odio ipsum. Aenean quis consequat augue. Aliquam ac ullamcorper justo. Morbi porta est vel vehicula cursus.</p>
+    <a id="maincontent"></a> <!--this is an anchor-->
+
+</body>
+</html>
