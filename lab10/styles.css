@@ -19,9 +19,6 @@ nav a {
     padding: 8px;
     margin-bottom: 20px;
 }
-a {
-    color: green;
-  }
 nav a:hover {background-color:#9a4300;}
 
 .skills {text-align: center;}
@@ -42,7 +39,7 @@ p {padding:20px}
 
 
 .saying {float:right;}
-.contactinfo {background-color:thistle; padding: 17; border-radius:14px;}
+.contactinfo {background-color:lightgoldenrodyellow; padding: 17; border-radius:14px;}
 
 
 .clear {clear: both;}
