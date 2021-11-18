@@ -1,0 +1,45 @@
+body {
+    background-color: #f3e5dc;
+    color: #000000;
+    margin:16px;
+}
+h1 {font-family: fantasy;font-weight: normal; font-style: normal;font-display:block; margin:10px;;
+}
+h2 {font-family: Marker Felt, fantasy; padding:10px;
+}
+h3 {font-family:'Franklin Gothic Medium', Arial, sans-serif; margin:10px;}
+p{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; margin:10px;
+}
+#header{
+	margin: 10px; Display: flex;
+    justify-content: center; background-color: #ADD8E6;}
+
+#header {font-family:Heathers;
+    font-size: 24px;
+    font-weight: 40;
+    letter-spacing: 1px;
+}
+
+#about{
+    margin: 10px; Display: flex; 
+    justify-content: center;
+}
+*{
+    box-sizing: border-box;
+  }
+  
+  .column {
+    float: left;
+    width: 33.33%;
+    padding: 8px;
+  }
+ 
+  #container{
+    float: right;
+    display:flex;   
+}
+.center {text-align: center;
+}
+.saying {float:right;}
+
