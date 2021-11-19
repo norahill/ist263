@@ -5,11 +5,11 @@ body {
 }
 h1 {font-family: fantasy;font-weight: normal; font-style: normal;font-display:block; margin:10px;;
 }
-h2 {font-family: Marker Felt, fantasy; padding:10px;
+h2 {font-family: Marker Felt, fantasy; padding:10px;font-size: 30px;
 }
 h3 {font-family:'Franklin Gothic Medium', Arial, sans-serif; margin:10px;}
 p{
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; margin:10px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; margin:10px; font-size: large;
 }
 #header{
 	margin: 10px; Display: flex;
@@ -42,4 +42,29 @@ p{
 .center {text-align: center;
 }
 .saying {float:right;}
+
+.justifycontent {
+    border: 1px ;
+    display: flex; 
+    justify-content: center;
+}
+.header {display:flex; flex: flex-wrap; flex:1;}
+
+.img1 /*this is the class of IMG*/
+{float:left; margin-right: 10px; }
+.clear {clear:both;}
+
+
+.part2 {display:flex;background-color: lightpink;}
+.part2 article {padding:20px;}
+.article1, .article2, .article3 {margin:10px;justify-content: center;}
+.article1 {flex:1; order:3;border-radius:1em;}
+.article2 {flex:1; order:2;border-radius:1em;}
+.article3 {flex:1;order:1;border-radius:1em;}
+
+.part3 {display:flex;background-color:lightsalmon;}
+.part3 article {padding:20px;margin: 110px;}
+.article4,.article5 {margin:10px;justify-content:center;flex-wrap:wrap;}
+
+
 
