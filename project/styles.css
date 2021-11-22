@@ -50,11 +50,11 @@ p{
 }
 .header {display:flex; flex: flex-wrap; flex:1;}
 
-.img1,.Bacco 
+.img1,.img2 
 {float:left; margin-right: 10px; }
 .clear {clear:both;}
 
-.briccoimg {float:right; margin-left: 20px;}
+.img3 {float:right; margin-left: 20px;}
 .clear {clear:both;}
 .part1 {background-color:#FFD580; padding:29px;}
 .part2 {display:flex;background-color: lightpink;}
