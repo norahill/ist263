@@ -51,6 +51,9 @@ p{
 .img1,.img2 
 {float:left; margin-right: 10px; }
 .clear {clear:both;}
+.img6{
+    justify-content: center;
+}
 
 .img3 {float:right; margin-left: 20px;}
 .clear {clear:both;}
