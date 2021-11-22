@@ -28,13 +28,11 @@ p{
 *{
     box-sizing: border-box;
   }
-  
   .column {
     float: left;
     width: 33.33%;
     padding: 8px;
   }
- 
   #container{
     float: right;
     display:flex;   
@@ -56,7 +54,7 @@ p{
 
 .img3 {float:right; margin-left: 20px;}
 .clear {clear:both;}
-.part1 {background-color:#FFD580; padding:29px;}
+.part1 {background-color:#FFD580; padding:20px;}
 .part2 {display:flex;background-color: lightpink;}
 .part2 article {padding:20px;background-color: lightpink;}
 .article1, .article2, .article3 {margin:10px;justify-content: center;}
