@@ -50,13 +50,15 @@ p{
 }
 .header {display:flex; flex: flex-wrap; flex:1;}
 
-.img1 /*this is the class of IMG*/
+.img1,.Bacco 
 {float:left; margin-right: 10px; }
 .clear {clear:both;}
 
-
+.briccoimg {float:right; margin-left: 20px;}
+.clear {clear:both;}
+.part1 {background-color:#FFD580; padding:29px;}
 .part2 {display:flex;background-color: lightpink;}
-.part2 article {padding:20px;}
+.part2 article {padding:20px;background-color: lightpink;}
 .article1, .article2, .article3 {margin:10px;justify-content: center;}
 .article1 {flex:1; order:3;border-radius:1em;}
 .article2 {flex:1; order:2;border-radius:1em;}
@@ -64,7 +66,15 @@ p{
 
 .part3 {display:flex;background-color:lightsalmon;}
 .part3 article {padding:20px;margin: 110px;}
+.part5 {display:flex;background-color:paleturquoise}
+.part5 article {padding:20px;margin: 110px;}
 .article4,.article5 {margin:10px;justify-content:center;flex-wrap:wrap;}
 
+.part2 {width: 100%;} 
+.part3 {max-width: 100%;} 
 
+
+@media only screen and (min-width:1200px) {
+    body {background-color:#f3e5dc;}
+}
 
