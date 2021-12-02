@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Part 2</title>
+</head>
+<body>
+        <style>
+            #hamicon {display: none; width:400 px;} /* turn off the Hamberger menu when page loads */
+            nav a:hover {background-color: lightseagreen;}
+            /* ONLY NEED TO SIZE THE WIDTH */ 
+            @media only screen and (max-width: 600px) {
+                span {display: none;}
+                #hamicon {display: block;} /*turning on hamberger when page is small */ 
+                nav a {
+                    display: block;
+                    padding: 10px 0px;
+                    }
+                #navlinks {display:none;}
+            }
+        </style>
+        <script>
+            function TurnNavOnOff () {
+                if (document.getElementById("navlinks").style.getPropertyValue("display")=='block') {
+                document.getElementById ("navlinks").style.display = "block"; = "none";
+
+                }
+                else {
+                    document.getElementById ("navlinks").style.display = "block";
+                }
+
+            }
+            /* if else statement checks a condition and does something if that condition exisits */TurnNavOnOff
+
+        </script>
+    </head>
+    <body>
+        <!--TO DO: 
+        HTML!
+        1. add hamberger IMG- check
+
+        CSS- media query: 
+        2. Show HB only when screen is small-checl
+        3. hide stacked nav when screen small-checl 
+
+        JAVA SCRIPT
+        4. turn on stack nav when user clicks H.B. 
+        5. turn off stacked nav when user clicks HB again-->
+
+        <nav>
+            <img src="https://laferger.github.io/ist263/images/hamburger.png" 
+            alt="hamburger icon" id="hamicon" onclick="TurnNavOnOff();">
+            <div id="navlinks">
+            <a href="index.html">Home</a> <span>|</span> 
+            <a href="skills.html">Skills</a> <span>|</span> 
+            <a href="contact.html">Contact</a>
+        </div>
+        </nav>
+
+        
+       
+    </body>
+</html>
+</body>
+</html>
