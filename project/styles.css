@@ -3,8 +3,7 @@ body {
     color: #000000;
     margin:16px;
 }
-h1 {font-family: fantasy;font-weight: normal; font-style: normal;font-display:block; margin:10px;;
-}
+h1 {font-family: 'Dancing Script', cursive; font-size:normal;}
 h2 {font-family: Marker Felt, fantasy; padding:10px;font-size: 30px;
 }
 h3 {font-family:'Franklin Gothic Medium', Arial, sans-serif; margin:10px;}
@@ -51,9 +50,6 @@ p{
 .img1,.img2 
 {float:left; margin-right: 10px; }
 .clear {clear:both;}
-.img6{
-    justify-content: center;
-}
 
 .img3 {float:right; margin-left: 20px;}
 .clear {clear:both;}
