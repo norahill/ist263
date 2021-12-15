@@ -81,7 +81,16 @@
             <a id="maincontent"></a>  
 <div class="containers">     
 <p><a class="button" onclick="openModal();">Sign Up for My Newsletter</a>and every month receive an email with free events in Boston, new food finds, and all the trendy activities for the season! </p>
-    <div class="column">
+<div id="modal">
+    <h3>Sign up!</h3>
+    <label for="name">Name:</label><br>
+    <input type="text" id="name" name="name"><br>
+    <label for="email">Email:</label><br>
+    <input type="text" id="email" name="email"><br>
+    <input type="submit" value="Subscribe">
+    <a id="closeModal" onclick="closeModal();">X</a>
+</div>   
+<div class="column">
       <img src="../project/images/selfie.jpeg" alt="Selfie" style="width:100%">
   </div>
     <div class="column">

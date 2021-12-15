@@ -113,3 +113,8 @@ p{
 .article4,.article5 {margin:10px;justify-content:center;flex-wrap:wrap;max-width:100%;}
 .part3 article {padding:20px;margin: 110px;}
 }
+@media only screen and (max-width: 600px){
+  nav a {display: block; max-width:100%}
+  span {display:none;}
+}
+nav a:hover {background-color: aqua;}
