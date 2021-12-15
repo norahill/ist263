@@ -13,8 +13,137 @@
         h1 {font-family:'Corinthia', cursive;
         font-family: 'Satisfy', cursive;
         }
+        <style>
+    body {
+      font-family: Arial;
+    }
+    /* Position the image container (needed to position the left and right arrows) */
+    .container {
+      position:relative; 
+      background-color:#C7CEEA;
+    }
+    
+    /* Hide the images by default */
+    .mySlides {
+      display: none;
+    }
+    
+    /* Add a pointer when hovering over the thumbnail images */
+    .cursor {
+      cursor: pointer;
+    }
+    
+    /* Next & previous buttons */
+    .prev,
+    .next {
+      cursor: pointer;
+      position: relative;
+      top: 40%;
+      width: auto;
+      padding: 16px;
+      margin-top: -50px;
+      color: red;
+      font-weight: bold;
+      font-size: 20px;
+      user-select: none;
+      -webkit-user-select: none;
+    }
+
+    /* Position the "next button" to the right */
+    .next {
+      right: 0;
+      border-radius: 3px 0 0 3px;
+    }
+    
+    /* On hover, add a black background color with a little bit see-through */
+    .prev:hover,
+    .next:hover {
+      background-color: rgba(0, 0, 0, 0.8);
+    }
+    
+    /* Number text (1/3 etc) */
+    .numbertext {
+      color: purple;
+      font-size: 12px;
+      padding: 8px 12px;
+      position: absolute;
+      top: 0;
+    }
+    
+    /* Container for image text */
+    .caption-container {
+      text-align: center;
+      background-color: #222;
+      padding: 2px 16px;
+      color: white;
+    }
+    .center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+    .row:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+    /* Six columns side by side */
+    .column {
+      float: left;
+      width: 16.66%;
+    }
+    
+    /* Add a transparency effect for thumnbail images */
+    .demo {
+      opacity: 0.6;
+    }
+    
+    .active,
+    .demo:hover {
+      opacity: 1;
+    }
+    </style>
         </style>
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+    <style>
+      /* position relative is the default position */
+      .button {
+          background-color:lightseagreen;
+          cursor: pointer;
+          padding: 5px;
+      }
+      /* write CSS to position our subscribe form and hide it when the page loads here */
+      #modal {
+          position: fixed; 
+          top: 50%;
+          left: 50%;
+          width: 200px;
+          height: 200px;
+          padding: 20px;
+          margin-top: -120px;
+          margin-left: -120px;
+          background-color: white;
+          box-shadow: 0px 0px 0px 100vw rgba(0,0,0,0.6);/*this is a drop shadow with a slightly see-through color*/ 
+          display: none;
+      }
+      #closeModal {
+          cursor: pointer;
+          position: absolute;
+          top: 0;
+          right: 0;
+          padding: 5px;
+      }
+  </style>
+  <script>
+      /* add code to open and close our subscribe form */
+      function openModal () {
+          document.getElementById('modal').style.display = 'block';
+      }
+      function closeModal () {
+          document.getElementById('modal').style.display = 'none';
+      }
+  </script>
 </head>
 <body>
     <nav> 
@@ -29,89 +158,191 @@
     <p><strong>Living in the North End this past summer was nothing short of a dream.</strong></p>
     <br>
     <p><strong>Close your eyes and envision cannoli shops on the street, the smell of garlic in the air, as you walk past shops making home-made pasta. <br> <br>If Italy does not fit the budget but you, North End is the place to spend out your summer days. Because so much of the North End is centered around the delicious Italian food, I’ll give you the best spots, after having tried a good handful of the restaurants. </strong></p>
-    <div class="center">
     <br>
+    <div class="center">
     <h2><strong>Let's Talk Pasta:</strong></h2>
     </div>
-
-
-
-
-
-
-
-
     <div class="part1">
         <article>
             <br> 
             <h2>BACCO</h2>
             <p>This authentic Italian restaurant will leave you speechless and is my <strong>all-time favorite restaurant to go to.</strong> A glass of Chianti from Central Tuscany, along with their roasted eggplant pasta in the spicy marinara sauce, topped heavily with mozzarella cheese, will be a hit for the table. Don’t forget to order the homemade meatballs and top off the dinner with their girl scout cookie espresso martini. Trust me on this recommendation, and you will be happy you did.</p>
             <p>This restaurant was voted one of the most romantic in Boston, and is just steps away from the Old North Church and Paul Revere's house. Get your tastebuds ready for this spot!</p>
-            <img src="../project/images/baccooutside.jpg" class="img1" alt=“Bacco” width="510" height="600">
+            <img src="../project/images/baccooutside.jpg" class="img1" alt=“Bacco Restaurant” width="510" height="600">
             <br>
         </article>
         <br> 
         </div>
-    <div class="part1">
+    <div class="part1"> <!--Part 1 is the food section of the North End-->
     <article>
         <br>
         <hr>
-       <br>
         <h2>BRICCO </h2>
-       <p style="overflow: auto;"> Though pricier than Bacco, this famous North End restaurant is a must. From ciabatta bread, fresh baguettes, and sunflower bread, getting a loaf to-go is the way to go. </p>
+       <p> Though pricier than Bacco, this famous North End restaurant is a must. From ciabatta bread, fresh baguettes, and sunflower bread, getting a loaf to-go is the way to go. </p>
        <p>Attached to Bricco is a little bakery called Bricco Salumeria & Pasta Shop, where fresh bread and artisanal pasta is made daily, which is directly used in the restaurant. </p>
     <img src="../project/images/pasta.jpeg" class="Briccoimg" alt="Bricco Restaurant" width="450" height="500">
     </article>
     </div>
-        <br>
-  <div class="center"> 
-      <br>
-    <h2>Now that we've eaten, what's for desert?</h2></div>
-
- <br>
- <div class="part5">
-    <article class="article4">
-        <img src="../project/images/mikespastry.jpeg" class="p5img1" alt="Mikes Pastry" width="450" height="300">
-        <h2>MIKES PASTRY</h2>
-        <p>Located on Hanover Street, there was never a night this past summer that I went and didn’t see a line wrapping around the street. This pastry shop is always crowded and bustling because of how famous it is for their cannoli’s. In fact, going to Mike’s Pastry has become a Boston tradition, and tourists are always eager to try their one-of-a-kind cannoli’s that keeps the people coming back for me. After trying five different cannoli throughout the North End, I can confidently say the pastries and sweets at Mike’s come in first place. The flavors of cannoli and variations of ricotta cheese are endless, from pistachio, caramel, and even mint chocolate chip. The handmade cannoli shells are the perfect crunch making it the best in the North End, especially because they are the only shop in the North End who makes their shells in house.</p>
-    </article>
-    <div class="clear"> </div>
-    <article class="article5">
-        <img src="../project/images/lobstertail.jpg" class="p5img2" alt="Lobster Tail" width="450" height="300">                
-       <h2>BOVA'S</h2>
-        <p style="overflow: auto;">Not only is Bova’s bakery voted for having the #1 tiramisu in the country, but this authentic Italian bakery is open 24/7! People flock from all over the country for this special tiramisu, which is filled with espresso and rum, and then filled with vanilla soaked sponge layers. You can find people here late at night getting their homemade calzones and arancini, also known as rice balls that are stuffed with cheese and meat like meatballs or steak Their Sicilian cannoli’s are also award winning, and their shells are deep fried to give the cannoli a crisp and bubbly shell. They also heavily sell lobster tail pastries, which is creamed puff dough filled with ricotta cheese.  </p>                    
-    </article>
-</div>
-    <br><br>
+    <br>
     <div class="center">
-    <h2>Other attractions to check out:</h2></div>
-
+    <h2> <strong>Attractions to check out:</strong></h2>
+  </div>
     <div class="part2">
-        <article class="article1">
-            <img src="../project/images/paulrevere.jpg" class="p2img1" alt="Paul Revere's House" width="450" height="520">
-            <h3>Paul Revere's House</h3>
-            <p>For all the history buffs, this house dates to the 1770s and has a museum attached to it. You’ll see the 2.5-mile-long Freedom Trail from here, as well as in other parts of the city, that connects 16 nationally significant historic sites. </p>
-            <p>This house has been restored to how it would appear when Revere and his family resided in it, and will give visitors an overview of Paul Revere's Ride, as well as the Boston Massacre. </p>
+      <article class="article1">
+        <h2>Faniel Hall</h2>
+          <img src="../project/images/fanielhall.jpeg" class="p2img1" alt="Faniel Hall" style="width:100%"
+          <p>Pictured: Faniel Hall during Winter</p>
+          <p>Boston Chowda always has samples of their famous clam chowder for tastings, while at Wicked Lobsta, you can treat yourself to a fresh lobster roll in a buttery roll. There are always street performers outside the doors of Faneuil Hall and can always count on it being entertaining.</p>
+          <p>Another notable spot in Faniel Hall is The Boston Chipyard, which pumps out warm, homemade cookies, using only the finest ingrediants!</p>
+          <p style="overflow: auto;"></p> 
         </article>
-        <div class="clear"> </div>
-        <article class="article2">
-            <img src="../project/images/chriscolumbus.jpg" class="p2img2" alt="Christopher Columbus Park" width="450" height="520">                
-            <h3>Christopher Columbus Park </h3>
-            <p style="overflow: auto;">The beautiful waterfront park has a flower garden, great restaurants next to it, and is right next to the Aquarium! The seals in the Aquarium are always out-front in the tank, and always a serotonin boost to see them playing in the water.</p>                    
-            <p>It is also located directly next to the ferry! If you find yourself wanting to explore the neighboring islands, such as Bumpkin or the historic Grape Island, this is always a fun summer activity! Not to mention, this is also where the boats leave for whale watching!</p>
-        </article>
-        <article class="article3">
-            <img src="../project/images/fanielhall.jpeg" class="p2img3" alt="Faniel Hall" width="450" height="520">
-           <h3>Faniel Hall</h3>
-            <p>Faneuil Hall is a ten-minute walk from Hanover Street and is worth it to check out. There is shopping inside Faneuil Hall, and every food imaginable is inside. Boston Chowda always has samples of their famous clam chowder for tastings, while at Wicked Lobsta, you can treat yourself to a fresh lobster roll in a buttery roll. There are always street performers outside the doors of Faneuil Hall and can always count on it being entertaining.</p>
-        </article>
+      <div class="clear"> </div>
+      <article class="article2">
+        <h2>Paul Revere's Home</h2>
+          <img src="../project/images/paulrevere.jpg" class="p2img2" alt="Paul Revere's Home" style="width:100%">                
+      
+          <p>For all the history buffs, this house dates to the 1770s and has a museum attached to it. You’ll see the 2.5-mile-long Freedom Trail from here, as well as in other parts of the city, that connects 16 nationally significant historic sites.
+
+           <p>This house has been restored to how it would appear when Revere and his family resided in it, and will give visitors an overview of Paul Revere's Ride, as well as the Boston Massacre.</p>
+          <p style="overflow: auto;"></p>                    
+      </article>
+      <article class="article3">
+        <h2>Christopher Columbus Park</h2>
+          <img src="../project/images/chriscolumbus.jpg" class="p2img3" alt="Christopher Columbus Park" style="width:100%">
+          <p> The beautiful waterfront park has a flower garden, great restaurants next to it, and is right next to the Aquarium! The seals in the Aquarium are always out-front in the tank, and always a serotonin boost to see them playing in the water.</p>
+           <p> It is also located directly next to the ferry! If you find yourself wanting to explore the neighboring islands, such as Bumpkin or the historic Grape Island, this is always a fun summer activity! Not to mention, this is also where the boats leave for whale watching!</p>
+      </article>
+  </div>
+  <div class="center"> 
+  <h2>Mikes Pastry's For Desert!</h2>
+    <body>
+    <h3>Now, what you've been waiting for: here I will tell you handsdown the most iconic and delicious desert spot in all of the North End.</h3>
+    <p> They are the only shop in the North End who makes their shells in house, and it shows. Located on Hanover Street, there was never a night this past summer that I went and didn’t see a line wrapping around the street. </p>
+    <br>
+    <h3> Take look below to see the history of this iconic bakery! </h3>
+    
+    <div class="container"> 
+      <div class="mySlides">
+        <div class="numbertext">1 / 6</div>
+        <img src="../lab03/1940.jpg" alt="Mike Pastry in 1940s" class="center" width="width:100%">
+        <p> Mike's was opened in 1946, by Michael Mercogliano. He moved into Boston when he was 12, straight from Italy. Mike had never taken a baking classm, but began working at his cousins bakery, carefully perfecting his cannoli recipe. He fell in love with baking, and strived to create the perfect bite of a cannoli- and he did!</p>
+      </div>
+    
+      <div class="mySlides">
+        <div class="numbertext">2 / 6</div>
+        <img src="../lab03/mikesbaking.jpg" alt="Mikes Pastry" style="width:100%">
+        <p> Mikes immediately gained popularity, and was voted the #1 bakery in all of Boston and the North End. The staff increased, orders increased, and tourists flocked to take a taste of this famous pastry.</p>
+      </div>
+    
+      <div class="mySlides">
+        <div class="numbertext">3 / 6</div>
+        <img src="../lab03/mikeandhiswife.jpg" alt="Mikes Pastry" style="width:100%">
+        <p>In 1988, Mike Mercogliano told the Globe that, "If you want low-fat, sugar-free cookies, don't come to Mikes". Luckily, the long lines are not concerned about the calories, they are there for the taste! Not to mention that creamy ricotta filling!</p>
+      </div>
+        
+      <div class="mySlides">
+        <div class="numbertext">4 / 6</div>
+        <img src="../lab03/modernmikes.png" alt="Modern Mikes" style="width:100%">
+        <p>The cannolis are packed in the signature white box,with "Mikes" written in blue font, and tied with a blue ribbon. In this box you could find various types of cannolis, lobster tails, eclairs, Boston cream pies, you name it, they have it! </p>
+      </div>
+    
+      <div class="mySlides">
+        <div class="numbertext">5 / 6</div>
+        <img src="../lab03/modernmikes2.png" alt="Modern Mikes" style="width:100%">
+        <p>A first hand look at what the lines look like. Even on the rainiest of days, and even on a weekday, this line is always wrapping around the corner. Fun fact: they have never once paid for advertising. Between the crowds and the iconic boxes, not to mention word of mouth, why would they ever need to? People love it, and you will too. </p>
     </div>
-        <footer>
-        <div class="copyright">
-            &#169; 
-            2021 
+        
+      <div class="mySlides">
+        <div class="numbertext">6 / 6</div>
+        <img src=".//images/mikespastry.jpeg" alt="Famous Cannolis" style="width:100%">
+        <p>After trying five different cannoli throughout the North End, I can confidently say the pastries and sweets at Mike’s come in first place. The flavors of cannoli and variations of ricotta cheese are endless, from pistachio, caramel, and even mint chocolate chip. The handmade cannoli shells are the perfect crunch making it the best in the North End</p>
+    </div>
+        
+      <a class="prev" onclick="plusSlides(-1)">❮</a>
+      <a class="next" onclick="plusSlides(1)">❯</a>
+    
+      <div class="caption-container">
+        <p id="caption"></p>
+      </div>
+    
+      <div class="row">
+        <div class="column">
+          <img class="demo cursor" src="../lab03/1940.jpg" alt="Mikes Pastry" style="max-width: 100%;" onclick="currentSlide(1)">
+            <p> 1940s</p>
         </div>
-        <div class="saying">I love that dirty water </div>
-    </footer>
+        <div class="column">
+          <img class="demo cursor" src="../lab03/mikesbaking.jpg" style="max-width:100%;"" onclick="currentSlide(2)" alt="Mikes Pastry in 1950s">
+        <p>1950s</p>
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="../lab03/mikeandhiswife.jpg" style="width:100%" onclick="currentSlide(3)" alt="Mikes Pastry in the 1960s-1980s with his Wife">
+        <p>1960s-1990ss</p>
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="../lab03/modernmikes.png" style="width:100%" onclick="currentSlide(4)" alt="Modern Mikes Bakery">
+        <p>2000s</p>
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="../lab03/modernmikes2.png" style="width:100%" onclick="currentSlide(5)" alt="Modern Mikes Bakery and Packaging">
+          <p>2000s</p>
+        </div>    
+        <div class="column">
+          <img class="demo cursor" src=".//images/mikespastry.jpeg" style="width:100%" onclick="currentSlide(6)" alt="Famous Cannoli ">
+          <p>2021</p>
+        </div>
+      </div>
+    </div>
+    
+    <script>
+    var slideIndex = 1;
+    showSlides(slideIndex);
+    
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+    
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+    
+    function showSlides(n) {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("demo");
+      var captionText = document.getElementById("caption");
+      if (n > slides.length) {slideIndex = 1}
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";
+      dots[slideIndex-1].className += " active";
+      captionText.innerHTML = dots[slideIndex-1].alt;
+    }
+    </script>
+    <br>
+    <br>
+    <footer>
+      <div class="formfillout">
+        <br>
+        <br> 
+          <p><a class="button" onclick="openModal();">Sign Up for My Newsletter</a></p>
+      <div id="modal">
+          <h3>Sign up!</h3>
+          <label for="name">Name:</label><br>
+          <input type="text" id="name" name="name"><br>
+          <label for="email">Email:</label><br>
+          <input type="text" id="email" name="email"><br>
+          <input type="submit" value="Subscribe">
+          <a id="closeModal" onclick="closeModal();">X</a>
+      </div>
+        <div class="copyright">
+              &#169; 
+              2021 
+          </div>
+      </footer>  
     </body>
     </html>
