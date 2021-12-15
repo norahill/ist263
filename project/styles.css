@@ -11,7 +11,15 @@ h3 {font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida S
 p{
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; margin:10px; font-size:1em;
 }
-.skip {color: #FFFFFF; }
+#skip {
+  position: absolute; /* how to add text over an image*/
+  left: -999px; 
+  background-color:orange;
+
+}
+#skip:focus {
+  left: 10px;
+}
 #header{
 	margin: 20px; Display: flex; padding:5px;
     justify-content: center; background-color: #ADD8E6;}
